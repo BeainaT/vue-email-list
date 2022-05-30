@@ -14,9 +14,11 @@
 
     <body>
         <div id="app">
-            <ul v-for="mail in mailList">
-                <li>{{mail}}</li>
-            </ul>
+            <template v-if="mailList.length == myLength">
+                <ul v-for="mail in mailList">
+                    <li>{{mail}}</li>
+                </ul>
+            </template>
         </div>
 
         <script src="js/main.js"></script>

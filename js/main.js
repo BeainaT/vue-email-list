@@ -2,6 +2,7 @@ const app = new Vue({
     el: "#app",
     data: {
         mailList: [],
+        myLength: 10,
     },
     created() {
         for (let i = 0; i < 10; i++) {
